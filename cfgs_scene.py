@@ -16,7 +16,7 @@ global_cfgs = {
 dataset_cfgs = {
     'dataset_train': lmdbDataset,
     'dataset_train_args': {
-        'roots': ['path/to/lmdb_ST', 'path/to/lmdb_SK'],
+        'roots': ['/cephfs/group/ieg-iegpdata-hy-dc-dm/xuhuaren/ft_local/data_lmdb_release/training/MJ', '/cephfs/group/ieg-iegpdata-hy-dc-dm/xuhuaren/ft_local/data_lmdb_release/training/ST'],
         'img_height': 32,
         'img_width': 128,
         'transform': transforms.Compose([transforms.ToTensor()]),
@@ -30,7 +30,7 @@ dataset_cfgs = {
 
     'dataset_test': lmdbDataset,
     'dataset_test_args': {
-        'roots': ['path/to/lmdb_IIIT5K_test/or/any/other/testset'],
+        'roots': ['/cephfs/group/ieg-iegpdata-hy-dc-dm/xuhuaren/ft_local/data_lmdb_release/evaluation/IIIT5k_3000'],
         'img_height': 32,
         'img_width': 128,
         'transform': transforms.Compose([transforms.ToTensor()]),
